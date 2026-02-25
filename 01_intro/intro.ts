@@ -1,9 +1,9 @@
-let user={
-    name:"John",
-    age:30,
-    isAdmin:true
-}
-console.log(user.name); // John
+// let user={
+//     name:"John",
+//     age:30,
+//     isAdmin:true
+// }
+// console.log(user.name); // John
 
 
 //ts is a wrapper around the javascript language, it adds some features and checks to make it easier to write and maintain code.
