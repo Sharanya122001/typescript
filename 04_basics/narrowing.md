@@ -116,3 +116,6 @@ if (isFish(animal)) {
 }
 
 That animal is Fish is special syntax for narrowing.
+
+
+typeof is a type gurd which is usefull in checking the type and narrowing down the type to avoid the error
