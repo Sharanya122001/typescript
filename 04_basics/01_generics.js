@@ -43,3 +43,29 @@ console.log(box1.content); // 123
 // result3.toUpperCase(); // ❌ Error (correctly detected)
 // any = No type checking
 // <T> = Flexible but safe type
+//--------generics with arrays
+var item = [];
+item.push(10);
+item.push("hello");
+item.push(true);
+//VERY CONFUSTING aANd any type it can take 
+// with generic
+var numbers = [];
+numbers.push(10);
+numbers.push(11);
+numbers.push(12);
+// numbers.push("hello") // Error: Argument of type 'string' is not assignable to parameter of type 'number'.
+// 🎯 Why Generics Are Important?
+// Because:
+// ✅ Prevent mistakes
+// ✅ Makes code clean
+// ✅ Makes IntelliSense help you
+// ✅ Safe programming
+function getmor(product) {
+    //
+    //
+    return product[0];
+}
+var getmore = function (prducts) {
+    return prducts[0];
+}; ///the <T> in the first line is maing this function generic.

@@ -54,3 +54,38 @@ console.log(box1.content); // 123
 
 // any = No type checking
 // <T> = Flexible but safe type
+
+
+//--------generics with arrays
+
+let item=[]
+item.push(10);
+item.push("hello")
+item.push(true)
+//VERY CONFUSTING aANd any type it can take 
+
+// with generic
+let numbers:Array<number>=[]
+numbers.push(10);
+numbers.push(11);
+numbers.push(12);
+// numbers.push("hello") // Error: Argument of type 'string' is not assignable to parameter of type 'number'.
+
+// 🎯 Why Generics Are Important?
+// Because:
+// ✅ Prevent mistakes
+// ✅ Makes code clean
+// ✅ Makes IntelliSense help you
+// ✅ Safe programming
+
+
+function getmor<T>(product:T[]):T{
+    //
+    //
+    return product[0];
+
+}
+
+const getmore=<T>(prducts:T[]):T=>{//this is how the generic is used in the arrow function
+    return prducts[0];
+}///the <T> in the first line is maing this function generic.
